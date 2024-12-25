@@ -1,9 +1,12 @@
 const express = require('express');
 const app = express();
 
-app.use("/",(req,res) => {
-    res.send("server is running !");
-})
+// Use the default route to respond
+app.get("/", (req, res) => {
+    res.send("server is running!");
+});
 
-
-app.listen(5000,console.log('server is running on port 5000'));
+// Vercel requires the port to be dynamic, use the PORT environment variable
+app.listen(process.env.PORT || 5000, () => {
+  console.log('Server is running!');
+});
