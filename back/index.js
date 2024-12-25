@@ -2,7 +2,7 @@ const express = require('express');
 const app = express();
 
 // Use the default route to respond
-app.get("/", (req, res) => {
+app.get("/server", (req, res) => {
     res.send("server is running!");
 });
 
