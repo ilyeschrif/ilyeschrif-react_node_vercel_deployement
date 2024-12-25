@@ -1,0 +1,146 @@
+.header {
+    height: 80px;
+    padding: 0 20px;
+    display: flex;
+    align-items: center;
+    background-color: #ffffff;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    position: relative;
+}
+
+.logo-section {
+    display: flex; /* Align logo and text in a row */
+    align-items: center; /* Center items vertically */
+    flex: 1; /* Allow this section to grow */
+    justify-content: center; /* Center content horizontally */
+    margin-left: 250px;
+    cursor: pointer;
+}
+
+.logo {
+    height: 60px; /* Adjust logo height */
+    margin: 0 10px; /* Space between logo and text */
+}
+
+.company-name {
+    font-size: 20px; /* Font size for company names */
+    font-weight: bold; /* Make text bold */
+    color: #333; /* Text color */
+    margin: 0 10px; /* Margin around the text */
+}
+
+.left {
+    /* Specific styles for the left company name can go here */
+    color: #333; /* Color for left text */
+}
+
+.right {
+    /* Specific styles for the right company name can go here */
+    color: #333; /* Color for right text */
+}
+
+.nav-section {
+    margin-left: auto; /* Push nav section to the right */
+    display: flex;
+}
+
+.navbar-container {
+    display: flex;
+    justify-content: flex-end; /* Align nav items to the right */
+}
+
+.navbar-container ul {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar-container li {
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: 500;
+    color: #000000;
+    transition: color 0.3s;
+}
+
+.dropdown svg {
+    margin-left: 5px;
+    transition: transform 0.3s;
+}
+
+.dropdown:hover svg {
+    transform: rotate(180deg);
+}
+
+.dropdown-company-menu {
+    position: absolute;
+    top: 70px;
+    right: 20px;
+    width: 240px;
+    background-color: #ffffff;
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.15);
+    border-radius: 8px;
+    overflow: hidden;
+    z-index: 1000;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+}
+
+.dropdown-link,
+.dropdown-example {
+    display: flex;
+    align-items: center;
+    padding: 12px 16px;
+    color: #333;
+    cursor: pointer;
+    transition: background 0.2s;
+}
+
+.dropdown-link:hover,
+.dropdown-example:hover {
+    background-color: #f0f0f0;
+}
+
+.arrow {
+    width: 16px;
+    height: 16px;
+    margin-right: 8px;
+}
+
+.hr-line {
+    margin: 0;
+    border: 0;
+    height: 1px;
+    background-color: #e0e0e0;
+}
+
+.dropdown-company-menu p {
+    margin: 0;
+}
+
+.fiters-options-container {
+    padding: 0;
+}
+
+.companies-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.filter-option {
+    display: inline-block;
+    width: 80px;
+    height: 30px;
+    margin-left: 10px;
+    background-color: #e2e8f0;
+    font-size: 12px;
+    padding: 0 12px;
+    border-radius: 18px;
+    text-align: center;
+    line-height: 30px;
+    vertical-align: middle;
+}
